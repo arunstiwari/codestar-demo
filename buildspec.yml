@@ -6,6 +6,7 @@ phases:
       java: corretto11
   post_build:
     commands:
+      - git remote remove origin
       - git remote add origin https://github.com/arunstiwari/codestar-demo-pub.git
       - git push -u origin master
       # Do not remove this statement. This command is required for AWS CodeStar projects.
