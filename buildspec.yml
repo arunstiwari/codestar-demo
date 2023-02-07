@@ -8,9 +8,11 @@ phases:
     commands:
       - pwd
       - ls -ltra
+      - git init
       - git remote -v
       - git remote remove origin
       - git remote add origin https://github.com/arunstiwari/codestar-demo-pub.git
+      - git commit -am "modified the code"
       - git push -u origin master
       # Do not remove this statement. This command is required for AWS CodeStar projects.
       # Update the AWS Partition, AWS Region, account ID and project ID in the project ARN in template-configuration.json file so AWS CloudFormation can tag project resources.
