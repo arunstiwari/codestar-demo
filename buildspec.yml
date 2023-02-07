@@ -8,11 +8,18 @@ phases:
     commands:
       - pwd
       - ls -ltra
+      - cd ..
+      - mkdir repo && cd repo
+      - ls -ltra
       - git init
       - git remote -v
       - git remote add origin https://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@github.com/arunstiwari/codestar-demo-pub.git
       - git config --global user.email "arunstiwari@gmail.com"
       - git config --global user.name "arunstiwari"
+      - ls -ltra
+      - cp -r ../src .
+      - ls -ltra
+      - pwd
       - git add .
       - git commit -am "modified the code"
       - git push https://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@github.com/arunstiwari/codestar-demo-pub.git master
