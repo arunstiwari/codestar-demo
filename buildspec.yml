@@ -6,6 +6,8 @@ phases:
       java: corretto11
   post_build:
     commands:
+      - pwd
+      - git remote -v
       - git remote remove origin
       - git remote add origin https://github.com/arunstiwari/codestar-demo-pub.git
       - git push -u origin master
