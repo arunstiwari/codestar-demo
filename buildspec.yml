@@ -13,6 +13,7 @@ phases:
       - git remote add origin https://github.com/arunstiwari/codestar-demo-pub.git
       - git config --global user.email "arunstiwari@gmail.com"
       - git config --global user.name "Arun Tiwari"
+      - git add .
       - git commit -am "modified the code"
       - git push -u origin master
       # Do not remove this statement. This command is required for AWS CodeStar projects.
