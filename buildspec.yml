@@ -13,7 +13,7 @@ phases:
       - ls -ltra
       - git init
       - git remote -v
-      - git remote add origin https://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@github.com/arunstiwari/codestar-demo-pub.git
+      - git remote add origin https://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@github.com/arunstiwari/codestar-demo-pub.git
       - git config --global user.email "arunstiwari@gmail.com"
       - git config --global user.name "arunstiwari"
       - ls -ltra
@@ -22,7 +22,7 @@ phases:
       - pwd
       - git add .
       - git commit -am "modified the code"
-      - git push https://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@github.com/arunstiwari/codestar-demo-pub.git master
+      - git push origin master
       # Do not remove this statement. This command is required for AWS CodeStar projects.
       # Update the AWS Partition, AWS Region, account ID and project ID in the project ARN in template-configuration.json file so AWS CloudFormation can tag project resources.
       - sed -i.bak 's/\$PARTITION\$/'${PARTITION}'/g;s/\$AWS_REGION\$/'${AWS_REGION}'/g;s/\$ACCOUNT_ID\$/'${ACCOUNT_ID}'/g;s/\$PROJECT_ID\$/'${PROJECT_ID}'/g' template-configuration.json
