@@ -8,9 +8,13 @@ phases:
     commands:
       - pwd
       - ls -ltra
+      - aws s3 ls
+      - aws s3 cp template.yml s3://codestar-demo-bucket-1234/
       - cd ..
       - mkdir repo && cd repo
       - ls -ltra
+      - aws s3 ls
+      - aws 
       - git init
       - git remote -v
       - git remote add origin https://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@github.com/arunstiwari/codestar-demo-2.git
