@@ -10,22 +10,9 @@ phases:
       - ls -ltra
       - aws s3 ls
       - aws s3 cp template.yml s3://codestar-demo-bucket-1234/
-      - cd ..
-      - mkdir repo && cd repo
+      - echo "Hello" > abc.txt
       - ls -ltra
-      - aws s3 ls
-      - aws 
-      - git init
-      - git remote -v
-      - git remote add origin https://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@github.com/arunstiwari/codestar-demo-2.git
-      - git config --global user.email "arunstiwari@gmail.com"
-      - git config --global user.name "arunstiwari"
-      - ls -ltra
-      - cp -r ../src .
-      - pwd
-      - git add src/template.yml
-      - git commit -am "modified the code"
-      - git push origin master
+      - git status
       # Do not remove this statement. This command is required for AWS CodeStar projects.
       # Update the AWS Partition, AWS Region, account ID and project ID in the project ARN in template-configuration.json file so AWS CloudFormation can tag project resources.
       - sed -i.bak 's/\$PARTITION\$/'${PARTITION}'/g;s/\$AWS_REGION\$/'${AWS_REGION}'/g;s/\$ACCOUNT_ID\$/'${ACCOUNT_ID}'/g;s/\$PROJECT_ID\$/'${PROJECT_ID}'/g' template-configuration.json
