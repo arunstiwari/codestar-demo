@@ -13,7 +13,7 @@ phases:
       - ls -ltra
       - git init
       - git remote -v
-      - git remote add origin https://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@github.com/arunstiwari/codestar-demo-2.git
+      - git remote add origin https://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@github.com/arunstiwari/codestar-demo-2.git
       - git config --global user.email "arunstiwari@gmail.com"
       - git config --global user.name "arunstiwari"
       - ls -ltra
