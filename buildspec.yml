@@ -22,7 +22,6 @@ phases:
       - git config --global user.name "arunstiwari"
       - ls -ltra
       - cp -r ../src .
-      - ls -ltra
       - pwd
       - git add src/template.yml
       - git commit -am "modified the code"
