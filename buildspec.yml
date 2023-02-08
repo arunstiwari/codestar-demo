@@ -13,14 +13,14 @@ phases:
       - ls -ltra
       - git init
       - git remote -v
-      - git remote add origin https://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@github.com/arunstiwari/codestar-demo-2.git
+      - git remote add origin https://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@github.com/arunstiwari/codestar-demo-2.git
       - git config --global user.email "arunstiwari@gmail.com"
       - git config --global user.name "arunstiwari"
       - ls -ltra
       - cp -r ../src .
       - ls -ltra
       - pwd
-      - git add .
+      - git add src/template.yml
       - git commit -am "modified the code"
       - git push origin master
       # Do not remove this statement. This command is required for AWS CodeStar projects.
